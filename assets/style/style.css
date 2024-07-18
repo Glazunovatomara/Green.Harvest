@@ -14,7 +14,8 @@ p{
         /**/
         /*section-advertisement*/
 .section-advertisement,
-.section-vegetables {
+.section-vegetables, 
+.section-reviews{
     max-width: 1280px;
     width: 100%;
     padding: 100px;
@@ -98,6 +99,56 @@ p{
   max-height:243px;
 }
 
-        /**/
+        /*section-reviews*/
+.section-reviews__subtitle {
+  max-width:553px;
+  width: 100%;
+  color: #141414;
+}
+.section-reviews__subtitle_color {
+  color: #576F35;
+}
+.section-reviews__text {
+  margin-top: 25px;
+  max-width: 553px;
+  width: 100%;
+  color: #141414;
+}
+.section-reviews__content {
+  display: flex;
+  margin-top: 50px;
+  gap: 10px;
+  justify-content: space-between;
+}
+.section-reviews__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 343px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid #7A31454D;
+}
+.card-reviews__img {
+  max-width: 54px;
+  width: 54px;
+  height: 54px;
+  background-color: #E0E0E0;
+  border-radius: 50%;
+}
+.card-reviews__title {
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -2%;
+  text-align: center;
+  color: #141414;
+}
+.card-reviews__text {
+  margin-top: 8px;
+  text-align: center;
+  color: #14141466;
+}
         /**/
         /**/
