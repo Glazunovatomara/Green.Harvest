@@ -175,11 +175,11 @@ a {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
+  gap: 24px;
 }
 .form-order {
   display: flex;
   flex-direction: column;
-  max-width: 529px;
   width: 100%;
   padding: 50px;
   margin: 0;
@@ -228,6 +228,7 @@ textarea::placeholder {
 textarea {
   height: 95px;
   border-radius: 15px;
+  resize: none;
 }
 .form-order__button {
   width: 100%;
@@ -244,7 +245,6 @@ textarea {
   cursor: pointer;
 }
 .section-orders__box {
-  max-width: 527px;
   width: 100%;
   margin: 0;
   padding: 50px;
