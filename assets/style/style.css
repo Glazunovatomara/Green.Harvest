@@ -37,8 +37,8 @@ a {
   color: #141414;
 }
 .section-advertisement__title_background {
-  max-width: 808px;
-  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
   color:#FFFFFF;
   background:#576F35;
   border-radius: 12px;
