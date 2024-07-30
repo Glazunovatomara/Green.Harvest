@@ -199,6 +199,7 @@ a {
   max-width:282px;
   width:100%;
   max-height:243px;
+  align-self: center;
 }
 
         /*section-reviews*/
