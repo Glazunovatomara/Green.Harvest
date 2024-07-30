@@ -13,9 +13,28 @@ a {
   color: #FBFBFB;
   text-decoration: none;
 }
-        /**/
-        /**/
-        /*section-advertisement*/
+.title {
+  font-size: 76px;
+  font-weight:600;
+  line-height: 80px;
+  letter-spacing: -1.5%;
+}
+.subtitle {
+  font-size:64px;
+  font-weight:600;
+  line-height:64px;
+}
+.subject {
+  font-size:32px;
+  font-weight:600;
+  line-height:32px;
+  letter-spacing:-1.5%;
+}
+.text {
+  font-size:16px;
+  font-weight:500;
+  line-height:20px;
+}
 .section-hero,
 .section-advertisement,
 .section-vegetables, 
@@ -27,16 +46,16 @@ a {
   padding: 100px;
   margin: 0 auto;
 }
+        /**/
+        /**/
+        /*section-advertisement*/
+
 .section-advertisement__title {
   max-width: 1080px;
   width: 100%;
-  font-size: 76px;
-  font-weight:600;
-  line-height: 80px;
-  letter-spacing: -1.5%;
   color: #141414;
 }
-.section-advertisement__title_background {
+.section-advertisement__title-background {
   padding-left: 13px;
   padding-right: 13px;
   color:#FFFFFF;
@@ -44,25 +63,15 @@ a {
   border-radius: 12px;
 }
         /*section-vegetables*/
-.subtitle {
-  font-size:64px;
-  font-weight:600;
-  line-height:64px;
-}
 .section-vegetables__subtitle {
   max-width:508px;
   width:100%;
   padding-bottom:25px;
   letter-spacing:-1.5%;
 }
-.section-vegetables__subtitle_color,
-.section-order__subtitle_color{
+.section-vegetables__subtitle-color,
+.section-order__subtitle-color{
   color:rgba(251, 251, 251, 0.3);
-}
-.text {
-  font-size:16px;
-  font-weight:500;
-  line-height:20px;
 }
 .section-vegetables__text {
   max-width:626px;
@@ -86,15 +95,11 @@ a {
   border-radius:40px;
   background:#FBFBFB;
 }
-.section-vegetables__card_title {
+.section-vegetables__card-title {
   padding-bottom:12px;
-  font-size:32px;
-  font-weight:600;
-  line-height:32px;
-  letter-spacing:-1.5%;
   color:#7A3145;
 }
-.section-vegetables__card_weight {
+.section-vegetables__card-weight {
   padding-bottom:10px;
   font-size:14px;
   font-weight:600;
@@ -102,7 +107,7 @@ a {
   letter-spacing:-1.5%;
   color:#141414;
 }
-.section-vegetables__card_img {
+.section-vegetables__card-img {
   max-width:282px;
   width:100%;
   max-height:243px;
@@ -114,7 +119,7 @@ a {
   width: 100%;
   color: #141414;
 }
-.section-reviews__subtitle_color {
+.section-reviews__subtitle-color {
   color: #576F35;
 }
 .section-reviews__text {
@@ -251,12 +256,12 @@ textarea {
   border-radius: 30px;
 
 }
-.section-order__box_img {
+.section-order__box-img {
   position: relative;
-  max-width: 427px;
   width: 100%;
   max-height: 273px;
   height: 100%;
+  border-radius: 15px;
 }
 /*
 .section-order__box_img::after {
@@ -268,7 +273,7 @@ textarea {
   background-color: rgba(20, 20, 20, 0.3);
   z-index: 1;
 }*/
-.section-order__box__text {
+.section-order__box-text {
   max-width: 258px ;
   width: 100%;
   padding-top: 50px;
@@ -278,7 +283,7 @@ textarea {
   letter-spacing: -1.5%;
   color: #FBFBFB80;
 }
-.section-order__box__media {
+.section-order__box-media {
   max-width: 357px;
   margin-top: 15px;
   font-size: 32px;
