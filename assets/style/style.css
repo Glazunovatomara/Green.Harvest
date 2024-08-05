@@ -13,6 +13,10 @@ a {
   color: #FBFBFB;
   text-decoration: none;
 }
+a:hover {
+  color: #FBFBFB4D;
+  transition-duration: 0.25s;
+}
 .title {
   font-size: 76px;
   font-weight:600;
@@ -182,6 +186,10 @@ a {
   padding:32px;
   border-radius:40px;
   background:#FBFBFB;
+}
+.section-vegetables__card:hover {
+  transform: scale(1.02);
+  transition-duration:0,25s;
 }
 .section-vegetables__card-title {
   padding-bottom:12px;
