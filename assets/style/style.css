@@ -421,6 +421,7 @@ textarea {
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 1.5%;
+  text-transform: uppercase;
   cursor: pointer;
 }
 .section-orders__box {
