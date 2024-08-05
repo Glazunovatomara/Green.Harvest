@@ -22,17 +22,20 @@ a:hover {
   font-weight:600;
   line-height: 80px;
   letter-spacing: -1.5%;
+  text-transform: uppercase;
 }
 .subtitle {
   font-size:64px;
   font-weight:600;
   line-height:64px;
+  text-transform: uppercase;
 }
 .subject {
   font-size:32px;
   font-weight:600;
   line-height:32px;
   letter-spacing:-1.5%;
+  text-transform: uppercase;
 }
 .text {
   font-size:16px;
@@ -115,6 +118,7 @@ a:hover {
   line-height:20px;
   letter-spacing:-1.5%;
   color:#FBFBFB;
+  text-transform: uppercase;
   cursor:pointer;
 }
 .header__buttom:hover {
@@ -261,6 +265,7 @@ a:hover {
 .section-vegetables__card-title {
   padding-bottom:12px;
   color:#7A3145;
+  text-transform: lowercase;
 }
 .section-vegetables__card-weight {
   padding-bottom:10px;
@@ -269,6 +274,7 @@ a:hover {
   line-height:18px;
   letter-spacing:-1.5%;
   color:#141414;
+  text-transform: uppercase;
 }
 .section-vegetables__card-img {
   max-width:282px;
@@ -362,6 +368,7 @@ a:hover {
   line-height: 26px;
   letter-spacing: -1.5%;
   color: #141414;
+  text-transform: uppercase;
 }
 .form-order__title_color {
   color:#7A3145;
