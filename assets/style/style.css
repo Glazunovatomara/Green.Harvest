@@ -301,6 +301,10 @@ textarea {
   padding: 16px;
   border: 1px solid #14141433;
 }
+input, textarea:focus {
+  outline-color: #7A3145;
+  caret-color: #7A3145;
+}
 input::placeholder {
   font-size: 16px;
   font-weight: 500;
