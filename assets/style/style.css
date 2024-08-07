@@ -23,12 +23,21 @@ a:hover {
   line-height: 80px;
   letter-spacing: -1.5%;
   text-transform: uppercase;
+  @media screen and (max-width:375px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
 }
 .subtitle {
   font-size:64px;
   font-weight:600;
   line-height:64px;
   text-transform: uppercase;
+  @media screen and (max-width:375px) {
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: -1.5%;
+  }
 }
 .subject {
   font-size:32px;
@@ -36,11 +45,19 @@ a:hover {
   line-height:32px;
   letter-spacing:-1.5%;
   text-transform: uppercase;
+  @media screen and (max-width:375px) {
+    font-size:28px;
+    line-height: 28px;
+  }
 }
 .text {
   font-size:16px;
   font-weight:500;
   line-height:20px;
+  @media screen and (max-width:375px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .section-hero,
@@ -90,6 +107,13 @@ a:hover {
   justify-content:space-between;
   align-items:center;
   z-index:1;
+  @media screen and (max-width:768px) {
+    padding: 0 32px;
+  }
+  @media screen and (max-width:375px) {
+    top: 20px;
+    padding: 0 20px;
+  }
 }
 .header__nav {
   display:inline-flex;
@@ -152,6 +176,12 @@ a:hover {
 .section-hero__info {
   padding:238px 28px 0 100px;
   background-color:#576F35;
+  @media screen and (max-width:768px) {
+    padding:122px 32px 50px;
+  }
+  @media screen and (max-width:375px) {
+    padding:100px 20px 40px;
+  }
 }
 .section-hero__title,
 .section-hero__info-text {
@@ -164,7 +194,10 @@ a:hover {
 .section-hero__info-text {
   margin:128px 30px 50px 0;
   @media screen and (max-width:768px) {
-    margin-top: 25px;
+    margin: 25px 101px 0 0;
+  }
+  @media screen and (max-width:375px) {
+    margin: 0;
   }
 }
 .section-hero__info-img {
@@ -173,7 +206,9 @@ a:hover {
   object-fit: cover;
   @media screen and (max-width:768px) {
     max-height: 539px;
-    height: 100%;
+  }
+  @media screen and (max-width:375px) {
+    height: 370px;
   }
 }
 
@@ -183,20 +218,31 @@ a:hover {
   @media screen and (max-width:768px) {
     padding: 100px 64px;
   }
+  @media screen and (max-width:375px) {
+    padding: 40px 20px;
+  }
 }
 .section-hero__area-img {
   width:100%;
   height:100%;
   border-radius:30px;
   object-fit: cover;
+  @media screen and (max-width:768px) {
+    height: 640px;
+  }
+  @media screen and (max-width:375px) {
+    height: 450px;
+  }
 }
 .section-hero__content {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 160px;
+  padding: 100px 20px 160px 20px;
   background-color:#576F35;
   align-items: center;
+  @media screen and (max-width:375px) {
+    padding: 80px 20px;
+  }
 }
 .section-hero__content-title,
 .section-hero__text,
@@ -254,12 +300,20 @@ a:hover {
   max-width: 1080px;
   width: 100%;
   color: #141414;
+  @media screen and (max-width:768px) {
+    font-size: 64px;
+    line-height: 70px;
+  }
+  @media screen and (max-width:375px) {
+    font-size: 48px;
+    line-height: 50px;
+  }
 }
 .section-advertisement__title-background {
   padding-left: 13px;
   padding-right: 13px;
   color:#FFFFFF;
-  background:#576F35;
+  background-color:#576F35;
   border-radius: 12px;
 }
         /*section-vegetables*/
@@ -283,7 +337,7 @@ a:hover {
 }
 .section-vegetables__cards {
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(334px, 1fr));
+  grid-template-columns:repeat(auto-fill,minmax(310px, 1fr));
   gap:20px;
 }
 .section-vegetables__card {
@@ -414,7 +468,9 @@ a:hover {
   gap: 15px;
   background-color:#FBFBFB;
   border-radius: 30px;
-
+@media screen and (max-width:375px) {
+  padding: 40px 20px;
+}
 }
 .form-order__title {
   font-size: 24px;
@@ -450,6 +506,9 @@ input::placeholder {
 }
 input:first-of-type {
   margin-top:35px;
+  @media screen and (max-width:375px) {
+    margin-top: 25px;
+  }
 }
 textarea::placeholder {
   font-size: 16px;
@@ -474,24 +533,32 @@ textarea {
   font-size: 18px;
   font-weight: 600;
   line-height: 20px;
-  letter-spacing: 1.5%;
+  letter-spacing: -1.5%;
   text-transform: uppercase;
   cursor: pointer;
+  @media screen and (max-width:375px) {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 .section-orders__box {
   width: 100%;
+
   margin: 0;
   padding: 50px;
   background-color: #576F35;
   border-radius: 30px;
-
+@media screen and (max-width:375px) {
+  padding:40px 20px;
+}
 }
 .section-order__box-img {
   position: relative;
   width: 100%;
-  max-height: 273px;
-  height: 100%;
+  height: 273px;
   border-radius: 15px;
+  object-fit: cover;
 }
 /*
 .section-order__box_img::after {
@@ -509,17 +576,25 @@ textarea {
   padding-top: 50px;
   font-size: 18px;
   font-weight: 600;
-  line-height: 20px;
   letter-spacing: -1.5%;
+  @media screen and (max-width:375px) {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 .section-order__box-media {
-  max-width: 357px;
+  width: 100%;
   margin-top: 15px;
   font-size: 32px;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: -1.5%;
   color: #FBFBFB;
+  @media screen and (max-width:375px) {
+    font-size: 24px;
+    line-height: 26px;
+  }
 }
 
         /**/
@@ -555,6 +630,9 @@ textarea {
     flex-wrap:wrap;
     gap: 64px;
   }
+  @media screen and (max-width:375px) {
+    gap: 40px;
+  }
 }
 .footer__section,
 .footer__nav,
@@ -562,6 +640,15 @@ textarea {
   display:flex;
   flex-direction:column;
   gap:25px;
+  @media screen and (max-width:375px) {
+    gap: 14px;
+  }
+}
+.footer__content {
+  @media screen and (max-width:375px) {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 }
 .footer__nav {
   max-width:177px;
@@ -570,6 +657,10 @@ textarea {
   font-weight:600px;
   line-height:32px;
   letter-spacing:-1.5px;
+  @media screen and (max-width:375px) {
+    font-size: 28px;
+    line-height:28px;
+  }
 }
 .footer__contacts {
   max-width:215px;
@@ -578,12 +669,28 @@ textarea {
   font-weight:600;
   line-height:20px;
   letter-spacing:-1.5%;
+  @media screen and (max-width:375px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 .footer__info {
   display:flex;
   justify-content:space-between;
   margin-top:125px;
   color: #FBFBFB80;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -1.5%;
+  @media screen and (max-width:768px) {
+    margin-top: 100px;
+  }
+  @media screen and (max-width:375px) {
+    margin-top: 82px;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .footer__link > a {
   color: #FBFBFB80;
