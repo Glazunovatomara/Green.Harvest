@@ -48,7 +48,7 @@ a:hover {
 .section-vegetables, 
 .section-reviews,
 .section-order,
-.footeк{
+.footer{
   max-width: 1280px;
   width: 100%;
   padding: 100px;
@@ -340,12 +340,20 @@ a:hover {
 .section-reviews__content {
   display: flex;
   margin-top: 50px;
+  padding-bottom: 10px;
   gap: 25px;
   justify-content: space-between;
   overflow-x: scroll;
   @media screen and (max-width:768px) {
     gap: 18px;
   }
+}
+.section-reviews__content::-webkit-scrollbar {
+  background-color:#FBFBFB;
+}
+.section-reviews__content::-webkit-scrollbar-thumb {
+  border-radius: 24px;
+  background:#7A3145;
 }
 .section-reviews__card {
   display: flex;
