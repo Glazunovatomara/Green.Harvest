@@ -4,34 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green.Harvest</title>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/png"/>
-    <link rel="stylesheet" href="./style/style.css"/>
+    <link rel="shortcut icon" href="./assets/icons/favicon.svg" type="image/png"/>
+    <link rel="stylesheet" href="./assets/style/style.css"/>
 </head>
 <body>
     
     <!--fvjnfjk -->
-    <main class="main">
+    
         <!--fvjnfjk -->
     <header class="header">
-        <img src="./img/logo.svg" alt="logo" class="header-img"/>
+        <img src="./assets/icons/logo.svg" alt="logo" class="header-img"/>
         <nav class="header__nav">
             <ul class="header__nav-items">
-                <li class="header__nav-item"><a href="#works">How It Works</a></li>
-                <li class="header__nav-item"><a href="#vegetables">Vegetables</a></li>
-                <li class="header__nav-item"><a href="#reviews">Reviews</a></li>
+                <li><a href="#works" class="header__nav-item">How It Works</a></li>
+                <li><a href="#vegetables" class="header__nav-item">Vegetables</a></li>
+                <li><a href="#reviews" class="header__nav-item">Reviews</a></li>
             </ul>
             <button class="header__buttom">Shop now</button>
         </nav>
+        <div class="header__menu">
+            <input type="checkbox" id="burger-checkbox" class="header__menu-checkbox">
+            <label for="burger-checkbox" class="header__menu-burger">
+                <span class="header__menu-span"></span>
+            </label>
+            <div class="header__menu-nav">
+                <ul class="header__menu-list">
+                    <li><a href="#works" class="header__menu-list_item">How It Works</a></li>
+                    <li><a href="#vegetables" class="header__menu-list_item">Vegetables</a></li>
+                    <li><a href="#reviews" class="header__menu-list_item">Reviews</a></li>
+                </ul>
+                <button class="header__menu-btn">Shop now</button>
+            </div>
+        </div>
     </header>
+    <!--<main class="main">-->
         <!--fvjnfjk -->
         <section class="section-hero">
             <div class="section-hero__info">
                 <h1 class="title section-hero__title">organic vegetables to your diet today!</h1>
                 <p class="text section-hero__info-text">Our expertly curated vegetable baskets are made with the freshest, highest quality vegetables available. Fresh Harvest Box has got you covered. Fresh, high-quality vegetables in expertly curated vegetable baskets delivered to you.</p>
             </div>
-            <img src="./img/section-hero__img.png" alt="vegetables" class="section-hero__info-img"/>
+            <img src="./assets/img/section-hero__img.png" alt="vegetables" class="section-hero__info-img"/>
             <div class="section-hero__area">
-                <img src="./img/section-hero__area-img.jpeg" alt="" class="section-hero__area-img"/>
+                <img src="./assets/img/section-hero__area-img.jpeg" alt="" class="section-hero__area-img"/>
             </div>
             <div class="section-hero__content" id="works">
                 <h4 class="subject section-hero__content-title">To order your <span class="color-transparence">vegetable</span> basket, simply follow these <span class="color-transparence"> easy steps</span> </h4>
@@ -43,7 +58,7 @@
                 </ol>
             </div>
         </section>
-    </main>
+    <!--</main>-->
         <!--fvjnfjk -->
         <section class="section-advertisement">
             <h2 class="title section-advertisement__title">
@@ -61,32 +76,32 @@
                 <div class="section-vegetables__card">
                     <h4 class=" subject section-vegetables__card-title">eggplant</h4>
                     <p class="section-vegetables__card-weight">60 uah/kg</p>
-                    <img src="./img/eggplant.png" alt="eggplant" class="section-vegetables__card-img"/>
+                    <img src="./assets/img/eggplant.png" alt="eggplant" class="section-vegetables__card-img"/>
                 </div>
                 <div class="section-vegetables__card">
                     <h4 class="subject section-vegetables__card-title">leek</h4>
                     <p class="section-vegetables__card-weight">50 uah/kg</p>
-                    <img src="./img/leek.png" alt="leek" class="section-vegetables__card-img"/>
+                    <img src="./assets/img/leek.png" alt="leek" class="section-vegetables__card-img"/>
                 </div>
                 <div class="section-vegetables__card">
                     <h4 class="subject section-vegetables__card-title">mushrooms</h4>
                     <p class="section-vegetables__card-weight">40 uah/kg</p>
-                    <img src="./img/mushrooms.png" alt="mushrooms" class="section-vegetables__card-img"/>
+                    <img src="./assets/img/mushrooms.png" alt="mushrooms" class="section-vegetables__card-img"/>
                 </div>
                 <div class="section-vegetables__card">
                     <h4 class="subject section-vegetables__card-title">corn</h4>
                     <p class="section-vegetables__card-weight">60 uah/kg</p>
-                    <img src="./img/corn.png" alt="corn" class="section-vegetables__card-img"/>
+                    <img src="./assets/img/corn.png" alt="corn" class="section-vegetables__card-img"/>
                 </div>
                 <div class="section-vegetables__card">
                     <h4 class="subject section-vegetables__card-title">sweet potatoes</h4>
                     <p class="section-vegetables__card-weight">50 uah/kg</p>
-                    <img src="./img/potatoes.png" alt="sweet potatoes" class="section-vegetables__card-img"/>
+                    <img src="./assets/img/potatoes.png" alt="sweet potatoes" class="section-vegetables__card-img"/>
                 </div>
                 <div class="section-vegetables__card">
                     <h4 class="subject section-vegetables__card-title">carrot</h4>
                     <p class="section-vegetables__card-weight">40 uah/kg</p>
-                    <img src="./img/carrot.png" alt="carrot" class="section-vegetables__card-img"/>
+                    <img src="./assets/img/carrot.png" alt="carrot" class="section-vegetables__card-img"/>
                 </div>
             </div>
         </section>
@@ -98,17 +113,17 @@
             <p class="text section-reviews__text">Words of our customers: impressions and opinions about the quality of our services and the freshness of our products.</p>
             <div class="section-reviews__content">
                 <div class="section-reviews__card">
-                    <img src="./img/card-reviews__img.png" alt="" class="section-reviews__card-img"/>
+                    <img src="./assets/img/card-reviews__img.png" alt="" class="section-reviews__card-img"/>
                     <h5 class="section-reviews__card-title">John Wax</h5>
                     <p class="section-reviews__card-text">These vegetables are my secret to delicious and healthy meals. The quality is always at the highest level, the aroma and taste are enchanting. I advise every fan of real products!</p>
                 </div>
                 <div class="section-reviews__card">
-                    <img src="./img/card-reviews__img2.png" alt="" class="section-reviews__card-img"/>
+                    <img src="./assets/img/card-reviews__img2.png" alt="" class="section-reviews__card-img"/>
                     <h5 class="section-reviews__card-title">Victoria Romashenko</h5>
                     <p class="section-reviews__card-text">I love how fast and fresh the vegetables are delivered. Salads always turn out so appetizing, and soups are real masterpieces. The quality is impeccable!</p>
                 </div>
                 <div class="section-reviews__card">
-                    <img src="./img/card-reviews__img3.png" alt="" class="section-reviews__card-img"/>
+                    <img src="./assets/img/card-reviews__img3.png" alt="" class="section-reviews__card-img"/>
                     <h5 class="section-reviews__card-title">Ihor Trachuk</h5>
                     <p class="text section-reviews__card-text">Recently tried my fresh tomatoes and peppers - amazing! The authenticity of the taste, as if from the garden directly to my table. It is now my main vegetable supplier.</p>
                 </div>
@@ -123,13 +138,13 @@
             <div class="section-order__content">
                 <form class="section-order__form form-order">
                     <p class="form-order__title">Ordering <span class="form-order__title-color">from us</span> is quick and easy! Fill out <span class="form-order__title-color2">the form </span> below and we will contact you!</p>
-                    <input type="text" placeholder="Full Name"/>
-                    <input type="email" placeholder="Email"/>
+                    <input class="form-order__name" type="text" placeholder="Full Name"/>
+                    <input class="form-order__email" type="email" placeholder="Email"/>
                     <textarea placeholder="Comment"></textarea>
                     <button class="form-order__button">Send</button>
                 </form>
                 <div class="section-order__box">
-                    <img src="./img/section-order__box_img.jpeg" alt="" class="section-order__box-img"/>
+                    <img src="./assets/img/section-order__box_img.jpeg" alt="" class="section-order__box-img"/>
                     <p class="text color-transparence section-order__box-text">Follow us on our social networks:</p>
                     <div class="section-order__box-media">
                     <a href="#">instagram</a> /
@@ -143,7 +158,7 @@
         <footer class="footer">
             <div class="footer__content">
                 <div class="footer__section">
-                    <img src="./img/logo.svg" alt="logo" class="footer__logo">
+                    <img src="/assets/icons/logo.svg" alt="logo" class="footer__logo">
                     <p class="text footer-text">Whether you're looking for a healthy snack or a thoughtful gift, our fruit baskets are the perfect choice.</p>
                 </div>
                 <div class="footer__section-2">

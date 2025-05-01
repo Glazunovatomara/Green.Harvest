@@ -1,5 +1,30 @@
+@font-face {
+  font-family: 'InterTight';
+  src: url(/assets/fonts/InterTight-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'InterTight';
+  src: url(/assets/fonts/InterTight-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'InterTight';
+  src: url(/assets/fonts/InterTight-Medium.ttf);
+  font-weight: 500;
+}
+
+/*
+// редактировать хедер сделать бургер меню
+// адаптив первого блока
+// сверить с макетом адаптив
+// сделать уши
+*/
+
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'InterTight';
 }
 h1,
 h2,
@@ -54,15 +79,6 @@ a:hover {
   padding: 100px;
   margin: 0 auto;
 }
-.section-hero{
-
-}
-.section-advertisement,
-.section-vegetables, 
-.section-reviews,
-.section-order {
-}
-
 .main {
   max-width: 1280px;
   width: 100%;
@@ -73,7 +89,7 @@ a:hover {
 }
         /**/
 .header {
-  position:absolute;
+  position:fixed;
   top:32px;
   display:flex;
   flex-direction:row;
@@ -92,12 +108,14 @@ a:hover {
   align-items:center;
   justify-content:space-between;
 }
+ul {
+  list-style-type:none;
+}
 .header__nav-items {
   display:inline-flex;
   gap:8px;
   padding:0;
   margin:0;
-  list-style-type:none;
   color:#FBFBFB;
   font-size:16px;
   font-weight:500;
@@ -134,10 +152,141 @@ a:hover {
   background-color:#622133;
   transition-duration:0.25s;
 }
+
+.header__menu {
+  position: relative;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  /*padding: 42px;
+  max-width: 351px;
+  width: 100%;*/
+  /*height: 100vh;*/
+  /*background-color: #7A3145;*/
+}
+/*.header__menu > div*/
+.header__menu-nav {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  height: 100hv;
+  width: 100%;
+  background-color: #7A3145;
+
+  padding: 50px 0;
+  top: -35px;
+  right: 0;
+  transform: translateX(1000%);
+  width: 351px;
+}
+.header__menu-checkbox {
+  position: absolute;
+  visibility: hidden;
+
+}
+.header__menu-burger {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 40px;
+  height: 26px;
+  justify-content: flex-end;
+  cursor: pointer;
+  z-index: 1;
+}
+.header__menu-span, 
+.header__menu-span::after,
+.header__menu-span::before {
+  position: absolute;
+  top: 10px;
+  display: block;
+  background-color: #FBFBFB;
+  width: 17px;
+  height: 4px;
+  border-radius: 10px;
+  transition-duration:0.25s;
+}
+.header__menu-span::after {
+  content: "";
+  width: 30px;
+  top: 10px;
+  transition-duration:0.25s;
+}
+.header__menu-span::before {
+  content: "";
+  width: 30px;
+  top: -10px;
+  transition-duration:0.25s;
+}
+.header__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 0;
+}
+.header__menu-list_item,
+.header__menu-btn {
+  border: 1px solid #FBFBFB;
+}
+.header__menu-list_item {
+  display: flex;
+  padding: 12px 12px;
+  border-radius: 12px;
+  max-width: 123px;
+  width: 100%;
+  justify-content: center
+}
+.header__menu-list_item:hover {
+  background-color: #FBFBFB;
+  color: #7A3145;
+}
+.header__menu-checkbox:checked ~ 
+.header__menu-burger >
+.header__menu-span {
+  transform: rotate(45deg);
+  transition-duration: 0.25s;
+}
+.header__menu-checkbox:checked ~ 
+.header__menu-burger >
+.header__menu-span::before {
+  transition-duration: 0.25s;
+  top: 0;
+}
+.header__menu-checkbox:checked ~
+.header__menu-burger >
+.header__menu-span::after {
+  transform: rotate(90deg);
+  top: 0;
+  transition-duration: 0.25s;
+}
+.header__menu-btn {
+  max-width: 157px;
+  width: 100%;
+  padding: 16px 32px;
+  border-radius: 30px;
+  background-color: #FBFBFB;
+  color: #7A3145;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header__menu-btn:hover {
+  background-color: #7A3145;
+  color: #FBFBFB;
+}
+.header__menu-checkbox:checked ~ .header__menu-nav {
+  transform: translateX(0);
+  transition-duration: 0.25s;
+}
+
         /**/
 .section-hero {
   display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(440px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(375px,1fr));
   padding:0;
 }
 .section-hero__info {
@@ -208,7 +357,7 @@ a:hover {
   counter-increment:item;
   background:#7A3145;
   border-radius:50%;
-  box-shadow: 0px 0px 0px 5px rgba(122, 49, 69, 0.3);
+  box-shadow: 0px 0px 0px 5px #7a31454d;
   color:#FBFBFB;
   font-size:20px;
   font-weight:600;
@@ -222,6 +371,10 @@ a:hover {
   border-radius:15px;
   background-color:#FBFBFB;
   color:#14141499;
+}
+.section-hero__item:nth-of-type(2) {
+  display: flex;
+  align-items: center;
 }
 .section-hero__item-bold {
   font-weight:700;
@@ -270,6 +423,7 @@ a:hover {
   padding:32px;
   border-radius:40px;
   background:#FBFBFB;
+  cursor: pointer;
 }
 .section-vegetables__card:hover {
   transform: scale(1.02);
@@ -415,7 +569,7 @@ input::placeholder {
   letter-spacing: -2%;
   color: #141414;
 }
-input:first-of-type {
+.form-order__name{
   margin-top:35px;
 }
 textarea::placeholder {
@@ -470,12 +624,11 @@ textarea {
   z-index: 1;
 }*/
 .section-order__box-text {
-  max-width: 258px ;
+  max-width: 270px ;
   width: 100%;
   padding-top: 50px;
   font-size: 18px;
   font-weight: 600;
-  letter-spacing: -1.5%;
 }
 .section-order__box-media {
   width: 100%;
@@ -495,6 +648,7 @@ textarea {
 .footer__content {
   display:flex;
   justify-content:space-between;
+  gap: 10px;
 }
 .footer__section {
   max-width:265px;
@@ -549,7 +703,22 @@ textarea {
 .footer__link > a {
   color: #FBFBFB80;
 }
-
+@media screen and (max-width:910px) {
+  .header__nav {
+    display: none;
+  }
+  .header__menu {
+    display: block;
+  }
+  .footer__section-2 {
+    flex-direction: column;
+    max-width: 215px;
+    width: 100%;
+  }
+  .footer__contacts {
+    padding-top: 64px;
+  }
+}
 @media screen and (max-width:768px) {
   .section-advertisement,
   .section-vegetables, 
@@ -560,10 +729,6 @@ textarea {
         /**/
   .header {
     padding: 0 32px;
-  }
-
-  .header__nav {
-    display: none;
   }
   .section-hero__info {
     padding:122px 32px 50px;
@@ -610,7 +775,7 @@ textarea {
   }
   
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:540px) {
   .title {
     font-size: 48px;
     line-height: 48px;
@@ -628,8 +793,8 @@ textarea {
     font-size: 14px;
     line-height: 18px;
   }
-
-
+}
+@media screen and (max-width:375px) {
   .section-advertisement,
   .section-vegetables, 
   .section-reviews,
@@ -669,7 +834,7 @@ textarea {
   .form-order {
     padding: 40px 20px;
   }
-  input:first-of-type {
+  .form-order__name {
     margin-top: 25px;
   }
   .form-order__button {
@@ -709,6 +874,7 @@ textarea {
     line-height:28px;
   }
   .footer__contacts {
+    padding-top: 0;
     font-size: 14px;
     line-height: 18px;
   }
