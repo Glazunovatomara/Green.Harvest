@@ -3,11 +3,10 @@
 ## Описание
 
 **Отзывчивий и адаптивный** одностраничный сайт созданный на основе общедоступного макета в Figma:
-[Green.Harvest] (https://www.figma.com/design/ikTFWn9SY4f8gtIcicuP1A/%D0%BE%D0%B2%D0%BE%D1%89%D0%B8?node-id=0-1&p=f&t=b3KMVHKhwa3c2Rgo-0)
+[Green.Harvest](https://www.figma.com/design/ikTFWn9SY4f8gtIcicuP1A/%D0%BE%D0%B2%D0%BE%D1%89%D0%B8?node-id=0-1&p=f&t=b3KMVHKhwa3c2Rgo-0)
 
 ## О проекте
 
-Сайт реализован на препроцессоре Sass.
 В проекте использовались следующие технологии:
 
 - Flexbox
@@ -22,3 +21,5 @@
 - [x] Современный дизайн
 - [x] Адаптивная верстка
 - [x] Простая навигация и интуитивно понятная структура
+
+Посмотреть сайт ➡️ [тут](https://glazunovatomara.github.io/Green.Harvest/)
