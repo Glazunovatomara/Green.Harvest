@@ -286,7 +286,7 @@ ul {
         /**/
 .section-hero {
   display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(375px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(440px,1fr));
   padding:0;
 }
 .section-hero__info {
@@ -793,8 +793,13 @@ textarea {
     font-size: 14px;
     line-height: 18px;
   }
-}
-@media screen and (max-width:375px) {
+  .section-hero {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(375px,1fr));
+    padding:0;
+  }
+/*}
+@media screen and (max-width:375px) {*/
   .section-advertisement,
   .section-vegetables, 
   .section-reviews,
