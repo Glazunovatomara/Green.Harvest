@@ -15,10 +15,10 @@
 }
 
 /*
-// редактировать хедер сделать бургер меню
+// редактировать хедер - проверить центровку
 // адаптив первого блока
 // сверить с макетом адаптив
-// сделать уши
+// сделать уши? мб
 */
 
 * {
@@ -90,11 +90,16 @@ a:hover {
 }
         /**/
 .header {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header > div{
   position:fixed;
   top:32px;
   display:flex;
   flex-direction:row;
-  margin: 0 auto;
+  margin: 0;
   padding:0 100px;
   max-width:1280px;
   width:100%;
@@ -157,7 +162,7 @@ ul {
 
 .header__menu {
   position: relative;
-  top: -10px;
+  top: 0px;
   right: -80px;
   display: none;
   flex-direction: column;
@@ -167,7 +172,7 @@ ul {
 .header__menu-nav {
   display: flex;
   position: absolute;
-  top: -35px;
+  top: -45px;
   right: -20px;
   flex-direction: column;
   align-items: center;
@@ -725,7 +730,7 @@ textarea {
     padding: 100px 32px;
   }
         /**/
-  .header {
+  .header > div {
     padding: 0 32px;
   }
   .header__menu {
@@ -808,7 +813,7 @@ textarea {
   }
 
         /**/
-  .header {
+  .header > div {
     top: 20px;
     padding: 0 20px;
   }
