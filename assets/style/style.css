@@ -289,9 +289,13 @@ ul {
         /**/
 .section-hero {
   display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(440px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
   padding:0;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+  }
 }
+
 .section-hero__info {
   padding:238px 28px 0 100px;
   background-color:#576F35;
@@ -329,6 +333,9 @@ ul {
   padding: 100px 20px 160px 20px;
   background-color:#576F35;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 100px;
+  }
 }
 .section-hero__content-title,
 .section-hero__text,
@@ -532,6 +539,7 @@ ul {
 .form-order {
   display: flex;
   flex-direction: column;
+  max-width: 628px;
   width: 100%;
   padding: 50px;
   margin: 0;
@@ -603,6 +611,7 @@ textarea {
   cursor: pointer;
 }
 .section-order__box {
+  max-width: 628px;
   width: 100%;
   margin: 0;
   padding: 50px;
@@ -706,6 +715,7 @@ textarea {
 .footer__link > a {
   color: #FBFBFB80;
 }
+
 @media screen and (max-width:910px) {
   .header__nav {
     display: none;
@@ -720,6 +730,15 @@ textarea {
   }
   .footer__contacts {
     padding-top: 64px;
+  }
+}
+@media screen and (max-width:850px) {
+  .section-order__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .form-order {
+    padding: 50px 100px;
   }
 }
 @media screen and (max-width:768px) {
@@ -766,9 +785,6 @@ textarea {
   .section-reviews__content {
     gap: 18px;
     }
-  .section-order__content {
-    flex-wrap: wrap;
-  }
   .footer {
     padding: 32px;
   }
