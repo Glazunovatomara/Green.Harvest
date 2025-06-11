@@ -302,8 +302,9 @@ ul {
 }
 .section-hero__title,
 .section-hero__info-text {
-  max-width:502px;
   width:100%;
+  hyphens: auto;
+  word-break: break-word;
 }
 .section-hero__title {
   line-height:76px;
